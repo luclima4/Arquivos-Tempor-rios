@@ -7,20 +7,22 @@ Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e 
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Lucas César de Lima Amaral 
+- Matricula:  
+- Proposta de projeto escolhida: Catálogo de filmes
+- Breve descrição sobre seu projeto: Catálogo de filmes contendo detalhes, como sinopse, atores protagonistas, ano de lançamento, etc. 
 
 **Print do testes da API com Postman ou similar**
 
-<<  COLOQUE A IMAGEM GET AQUI >>
+### GET
+![GET](public/assets/imagensRead/get.png)
 
-<<  COLOQUE A IMAGEM POST AQUI >>
-
-<<  COLOQUE A IMAGEM PUT AQUI >>
-
-<<  COLOQUE A IMAGEM DELETE AQUI >>
+### POST
+![POST](public/assets/imagensRead/post.png)
+### PUT
+![PUT](public/assets/imagensRead/put.png)
+### DELETE
+![DELETE](public/assets/imagensRead/delete.png)
 
 **Print da aba NETWORK com requisições Fetch/XHR de POST**
 

@@ -550,7 +550,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": "13",
       "titulo": "Nosferatu",
       "genero": "Terror, Fantasia",
       "ano": "2024",
@@ -646,14 +646,9 @@
   ],
   "logins": [
     {
-      "id": 1,
+      "id": "1",
       "email": "usuario@example.com",
-      "senha": "minhasenha"
-    },
-    {
-      "id": "2de5",
-      "email": "lucascesarlimaral@gmail.com",
-      "senha": "33334235"
+      "senha": "senhasenha"
     }
   ]
 }
