@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="assets/css/index.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/5c015c8b62.js" crossorigin="anonymous"></script>
+  <script src="jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1 id="tituloPrincipal"> <a style="text-decoration:none; color: black;" href="index.html">Cinefy</a></h1>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gêneros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Configurações</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                        <button style="background-color: rgb(34, 34, 34); color: white;"  class="btn" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    <div class="cabecalho">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="">
+          <a style="color: rgb(34, 34, 34);" href="login.html"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+
+      <p id="perfilInfo"><a class="texto" href="login.html">Entrar</a> | <a class="texto"
+          href="login.html">Cadastrar</a></p>
+    </div>
+  </header>
+
+  <main>
+    <!---------------------------------------------- BANNER PRINCIPAL ------------------------------------------------>
+
+      <div class="container">
+        <h2>Destaques da Semana</h2>        
+      </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div id="banner" class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="detalhes.html?id=1">
+            <img src="assets/imagens/fantasticBanner.webp" class="d-block w-100" alt="...">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Retorno do Quarteto Fantástico em <strong>2025</strong></h5>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="detalhes.html?id=14">
+          <img src="assets/imagens/vingadores.jpg" class="d-block w-100" alt="...">
+          <div class="overlay"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Relembrando o fenômeno da saga "Vingadores"</h5>
+          </div>
+        </a>
+        </div>
+      
+        <div class="carousel-item">
+          <a href="detalhes.html?id=13">
+          <img src="assets/imagens/nosferatu.jpg" class="d-block w-100" alt="...">
+          <div class="overlay"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 id="textoPadrao">Conde Orlok retorna em "Nosferatu"</h5>
+          </div>
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!---------------------------------------------- CARDS FILMES ------------------------------------------------>
+
+    <div class="container my-5">
+      <h2>Recomendados</h2>
+      <div id="injetaCard" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      </div>
+    </div>
+
+
+    <div class="container py-3">
+      <h2>Informações do Aluno</h2>
+      <hr class="my-4 border border-black">
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Sobre</h2>
+          <p>Cinefy é um catálogo de filmes desenvolvido e feito por Lucas César de Lima Amaral. O objetivo é que o usuário tenha acesso a filmes resenhas, informações, gêneros diversos de filmes. 
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <h2>Autoria</h2>
+          <div class="d-flex align-items-center gap-3">
+            <i  class="fa fa-user fa-3x" aria-hidden="true"></i>
+            <p class="mb-0"><strong>Aluno:</strong> Lucas César de Lima Amaral <br><strong>Turma:</strong> Sistemas de Informação <br><strong>Turno: </strong>Noite</p>
+          </div>
+            
+          
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="assets/scripts/index.js"></script>
+  <script src="assets/scripts/detalhes.js"></script>
+
+</body>
+
+</html>
