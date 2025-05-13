@@ -82,20 +82,11 @@ fetch('http://localhost:3000/filmes')
     `
       document.getElementById("containerDiv").innerHTML = cardsHTML
     }
-  })
+  
 
 /* Função para inserir fotos complementares do Filme em detalhes.html*/
 
-fetch('http://localhost:3000/filmes')
-  .then(response => response.json())
-  .then(movies2 => {
-
-    let param = new URLSearchParams(location.search);
-    let idURL = param.get("id");
-
-    let conteudo = movies2.find(elem => elem.id == idURL);
-
-    let arr = conteudo.imagens_complementares
+    let arr = movie.imagens_complementares
 
     for (let i = 0; i < arr.length; i++) {
       const imgComp = arr[i]

@@ -14,7 +14,7 @@
 
 }
 
-#loginForm {
+#submit {
     display: flex;
     flex-direction: column;
     justify-content: center;

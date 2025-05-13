@@ -5,7 +5,7 @@ fetch ('http://localhost:3000/filmes')
 
     let cardsHTML = ''
     
-    for(let i = 0; i < (filmes.length - 2); i++){
+    for(let i = 0; i < filmes.length; i++){
         let filme = filmes[i]
         cardsHTML += `
         
