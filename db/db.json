@@ -1,0 +1,737 @@
+{
+  "filmes": [
+    {
+      "id": "1",
+      "titulo": "Quarteto Fantastico: Primeiros Passos",
+      "protagonista": "Pedro Pascal",
+      "protagonista_imagem": "assets/imagens/protagonistas/pedro_pascal.webp",
+      "genero": "Aventura/ Ação",
+      "ano": "2025",
+      "avaliacao": "",
+      "sinopse": "Com o vibrante cenário de um mundo retrô-futurista inspirado nos anos 1960, somos apresentados a Primeira Família da Marvel - Reed Richards/Senhor Fantástico, Sue Storm/Mulher Invisível, Johnny Storm/Tocha Humana e Ben Grimm/O Coisa enquanto eles enfrentam seu desafio mais assustador até agora.",
+      "imagem": "assets/imagens/quarteto_fantastico_primeiros_passos1.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/quarteto_fantastico_primeiros_passos2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/quarteto_fantastico_primeiros_passos3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/quarteto_fantastico_primeiros_passos4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/quarteto_fantastico_primeiros_passos5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/quarteto_fantastico_primeiros_passos6.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/quarteto_fantastico_primeiros_passos7.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "titulo": "Mickey 17",
+      "genero": "Comédia, Aventura",
+      "ano": "2025",
+      "sinopse": "Mickey faz parte de um programa espacial de colonização e sempre é enviado para missões perigosas, quase suicidas. Se morrer, ele é clonado e boa parte de suas memórias são recuperadas. Mas, após seis mortes, ele começa a entender o porquê de seu cargo nunca ter sido ocupado antes.",
+      "avaliacao": 77,
+      "imagem": "assets/imagens/mickey.webp",
+      "protagonista": "Robert Pattinson",
+      "protagonista_imagem": "assets/imagens/protagonistas/robert_pattinson.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/mickeyHorizontal1.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/mickeyHorizontal2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/mickeyHorizontal3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/mickeyHorizontal4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/mickeyHorizontal5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/mickeyHorizontal6.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "titulo": "Donnie Darko",
+      "genero": "Fantasia, Mistério",
+      "ano": "2001",
+      "sinopse": "Donnie Darko é um jovem atormentado por visões de um coelho misterioso, que o influencia a agir de forma estranha. Enquanto passa por terapia e vive os dilemas do colégio, ele se vê envolvido em uma trama complexa com elementos de loucura, viagem no tempo e destino.",
+      "avaliacao": 88,
+      "imagem": "assets/imagens/donnie.webp",
+      "protagonista": "Jake Gyllenhaal",
+      "protagonista_imagem": "assets/imagens/protagonistas/jake_gyllenhaal.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/donnieHorizontal1.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/donnieHorizontal2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/donnieHorizontal3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/donnieHorizontal4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/donnieHorizontal5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/donnieHorizontal6.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "titulo": "Sinners",
+      "ano": "2025",
+      "genero": "Drama, Música, Terror",
+      "avaliacao": 98,
+      "sinopse": "Dispostos a deixar suas vidas conturbadas para trás, irmãos gêmeos retornam à sua cidade natal para recomeçar suas vidas do zero, quando descobrem que um mal ainda maior está à espera deles para recebê-los de volta.",
+      "imagem": "assets/imagens/pecadores.webp",
+      "protagonista": "Michael B. Jordan",
+      "protagonista_imagem": "assets/imagens/protagonistas/michael_b_jordan.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/sinnersHorizontal1.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/sinnersHorizontal2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/sinnersHorizontal3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/sinnersHorizontal4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/sinnersHorizontal5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/sinnersHorizontal6.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "titulo": "Midsommar",
+      "genero": "Terror, Mistério",
+      "ano": "2019",
+      "sinopse": "Dani e Christian formam um jovem casal americano com um relacionamento prestes a desmoronar. Mas depois que uma tragédia familiar os mantém juntos, Dani, que está de luto, convida-se para se juntar a Christian e seus amigos em uma viagem para um festival de verão único em uma remota vila sueca estranha e assustadora",
+      "avaliacao": 83,
+      "imagem": "assets/imagens/midsommar1.webp",
+      "protagonista": "Florence Pugh",
+      "protagonista_imagem": "assets/imagens/protagonistas/florence_pugh.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/midsommar2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/midsommar3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/midsommar4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/midsommar5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/midsommar6.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/midsommar7.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "titulo": "Clube da Luta",
+      "genero": "Aventura/ Ação",
+      "ano": "1999",
+      "sinopse": "Um homem deprimido que sofre de insônia conhece um estranho vendedor de sabonetes chamado Tyler Durden. Eles formam um clube clandestino com regras rígidas onde lutam com outros homens cansados de suas vidas mundanas. Mas sua parceria perfeita é comprometida quando Marla chama a atenção de Tyler.",
+      "avaliacao": 81,
+      "imagem": "assets/imagens/fight.webp",
+      "protagonista": "Edward Norton",
+      "protagonista_imagem": "assets/imagens/protagonistas/edwart_norton.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/fightHorizontal1.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/fightHorizontal2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/fightHorizontal3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/fightHorizontal4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/fightHorizontal5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/fightHorizontal6.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "titulo": "La La Land",
+      "genero": "Romance, Drama, Comédia",
+      "ano": "2016",
+      "sinopse": "O pianista Sebastian conhece a atriz Mia, e os dois se apaixonam perdidamente. Em busca de oportunidades para suas carreiras na competitiva Los Angeles, os jovens tentam fazer o relacionamento amoroso dar certo, enquanto perseguem fama e sucesso.",
+      "avaliacao": 91,
+      "imagem": "assets/imagens/lalaland.webp",
+      "protagonista": "Ryan Gosling",
+      "protagonista_imagem": "assets/imagens/protagonistas/ryan_gosling.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/lalalandHorizontal1.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/lalalandHorizontal2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/lalalandHorizontal3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/lalalandHorizontal4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/lalalandHorizontal5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/lalalandHorizontal6.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "titulo": "Blade Runner 2049",
+      "genero": "Ficção Científica/ Drama",
+      "ano": "2017",
+      "sinopse": "Trinta anos após os acontecimentos do primeiro filme, um novo blade runner, o oficial K da polícia de Los Angeles, desenterra um segredo há muito enterrado que tem o potencial de mergulhar o que resta da sociedade no caos. A descoberta de K o leva a uma busca para encontrar Rick Deckard, um ex-blade runner do LAPD que está desaparecido há 30 anos",
+      "avaliacao": 88,
+      "imagem": "assets/imagens/blade_runner_20491.webp",
+      "protagonista": "Ryan Gosling",
+      "protagonista_imagem": "assets/imagens/protagonistas/ryan_gosling.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/blade_runner_20492.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/blade_runner_20493.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/blade_runner_20494.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/blade_runner_20495.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/blade_runner_20496.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/blade_runner_20497.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "titulo": "Efeito Borboleta",
+      "genero": "Ficção científica, Thriller",
+      "ano": "2004",
+      "sinopse": "Evan é um jovem que luta para esquecer fatos de sua infância. Para isso, ele decide realizar uma regressão onde volta também fisicamente ao seu corpo de criança, tendo condições de alterar seu próprio passado. Porém, ao tentar consertar seus antigos problemas, ele acaba criando novos, já que toda mudança que realiza gera consequências em seu futuro",
+      "avaliacao": 81,
+      "imagem": "assets/imagens/efeito.webp",
+      "protagonista": "Ashton Kutcher",
+      "protagonista_imagem": "assets/imagens/protagonistas/ashton_kutcher.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/efeitoHorizontal1.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/efeitoHorizontal2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/efeitoHorizontal3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/efeitoHorizontal4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/efeitoHorizontal5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/efeitoHorizontal6.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "titulo": "Acompanhante Perfeita",
+      "genero": "Terror, Ficção Científica",
+      "ano": "2025",
+      "sinopse": "Josh e Iris parecem ser o casal ideal, até que um incidente mortal em uma viagem com amigos revela um segredo sombrio: Iris é uma androide criada para satisfazer Josh. E o que era para ser perfeito logo se torna incontrolável.",
+      "avaliacao": 94,
+      "imagem": "assets/imagens/acompanhante_perfeita1.webp",
+      "protagonista": "Sophie Tatcher",
+      "protagonista_imagem": "assets/imagens/protagonistas/sophie_tatcher.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/acompanhante_perfeita2.webp",
+          "descricao": "Imagens Acompanhante Perfeita"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/acompanhante_perfeita3.webp",
+          "descricao": "Imagens Acompanhante Perfeita"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/acompanhante_perfeita4.webp",
+          "descricao": "Imagens Acompanhante Perfeita"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/acompanhante_perfeita5.webp",
+          "descricao": "Imagens Acompanhante Perfeita"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/acompanhante_perfeita6.webp",
+          "descricao": "Imagens Acompanhante Perfeita"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/acompanhante_perfeita7.webp",
+          "descricao": "Imagens Acompanhante Perfeita"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "titulo": "Sociedade dos Poetas Mortos",
+      "genero": "Drama",
+      "ano": "1989",
+      "sinopse": "Em 1959 na Welton Academy, uma tradicional escola preparatória, um ex-aluno se torna o novo professor de literatura, mas logo seus métodos de incentivar os alunos a pensarem por si mesmos cria um choque com a ortodoxa direção do colégio, principalmente quando ele fala aos seus alunos sobre a Sociedade dos Poetas Mortos.",
+      "avaliacao": 85,
+      "imagem": "assets/imagens/dead.webp",
+      "protagonista": "Robin Williams",
+      "protagonista_imagem": "assets/imagens/protagonistas/robin_willians.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/deadHorizontal1.webp",
+          "descricao": "Imagens Sociedade dos Poetas Mortos"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/deadHorizontal2.webp",
+          "descricao": "Imagens Sociedade dos Poetas Mortos"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/deadHorizontal3.webp",
+          "descricao": "Imagens Sociedade dos Poetas Mortos"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/deadHorizontal4.webp",
+          "descricao": "Imagens Sociedade dos Poetas Mortos"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/deadHorizontal5.webp",
+          "descricao": "Imagens Sociedade dos Poetas Mortos"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/deadHorizontal6.webp",
+          "descricao": "Imagens Sociedade dos Poetas Mortos"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "titulo": "Seven",
+      "genero": "Crime, Mistério, Thriller",
+      "ano": "1995",
+      "sinopse": "Quando, a ponto de se aposentar, o detetive William Somerset aborda o último caso com a ajuda do recém-transferido David Mills, eles descobrem uma série de assassinatos. Logo percebem que estão lidando com um assassino que tem como alvo pessoas que ele acredita representar os sete pecados capitais.",
+      "avaliacao": 84,
+      "imagem": "assets/imagens/seven1.webp",
+      "protagonista": "Brad Pitt",
+      "protagonista_imagem": "assets/imagens/protagonistas/brad_pitt.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/seven2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/seven3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/seven4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/seven5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/seven6.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/seven7.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "titulo": "Nosferatu",
+      "protagonista": "Lily-Rose Depp",
+      "protagonista_imagem": "assets/imagens/protagonistas/lily_rose_depp.webp",
+      "genero": "Terror, Fantasia",
+      "ano": "2024",
+      "avaliacao": "84",
+      "sinopse": "Um conto gótico de obsessão entre uma jovem assombrada na Alemanha do século XIX e o antigo vampiro da Transilvânia que a persegue, trazendo consigo um horror incalculável.",
+      "imagem": "assets/imagens/nosferatu1.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/nosferatu2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/nosferatu3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/nosferatu4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/nosferatu5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/nosferatu6.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/nosferatu7.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "titulo": "Vingadores: Guerra Infinita",
+      "genero": "Aventura, Ação",
+      "ano": "2018",
+      "sinopse": "Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.",
+      "avaliacao": 85,
+      "imagem": "assets/imagens/vingadores_guerra_infinita1.webp",
+      "protagonista": "Robert Downey Jr.",
+      "protagonista_imagem": "assets/imagens/protagonistas/robert_downey_jr.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/vingadores_guerra_infinita2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/vingadores_guerra_infinita3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/vingadores_guerra_infinita4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/vingadores_guerra_infinita5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/vingadores_guerra_infinita6.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/vingadores_guerra_infinita7.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    }
+  ],
+  "filmesAdicionar": [
+    {
+      "id": "1",
+      "titulo": "O Iluminado",
+      "genero": "Terror/ Thriller",
+      "ano": "1980",
+      "sinopse": "Durante o inverno, um homem é contratado para ficar como vigia em um hotel no Colorado e vai para lá com a esposa e seu filho. Porém, o contínuo isolamento começa a lhe causar problemas mentais sérios e ele vai se tornado cada vez mais agressivo e perigoso, ao mesmo tempo que seu filho passa a ter visões de acontecimentos ocorridos no passado, que também foram causados pelo isolamento excessivo.",
+      "avaliacao": 85,
+      "imagem": "assets/imagens/o_iluminado1.webp",
+      "protagonista": "Jack Nicholson",
+      "protagonista_imagem": "assets/imagens/protagonistas/jack_nicholson.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/o_iluminado2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/o_iluminado3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/o_iluminado4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/o_iluminado5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/o_iluminado6.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/o_iluminado7.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "titulo": "Querido Menino",
+      "genero": "Drama",
+      "ano": "2018",
+      "sinopse": "David Sheff é um conceituado jornalista e escritor que vive com a segunda esposa e os filhos. O filho mais velho, Nic Sheff, é viciado em metanfetamina e abala completamente a rotina da família e daquele lar. David tenta entender o que acontece com o filho, que teve uma infância de carinho e suporte, ao mesmo tempo em que estuda a droga e sua dependência. Nic, por sua vez, passa por diversos ciclos da vida de um dependente químico, lutando para se recuperar, mas volta e meia se entregando ao vício",
+      "avaliacao": 94,
+      "imagem": "assets/imagens/querido_menino1.webp",
+      "protagonista": "Steve Carell",
+      "protagonista_imagem": "assets/imagens/protagonistas/steve_carell.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/querido_menino2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/querido_menino3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/querido_menino4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/querido_menino5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/querido_menino6.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/querido_menino7.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "titulo": "Thunderbolts",
+      "genero": "Ação, Ficção Científica",
+      "ano": "2025",
+      "sinopse": "Depois de se verem presos em uma armadilha mortal, uma equipe não convencional de anti-heróis deve embarcar em uma missão perigosa que os forçará a confrontar os cantos mais sombrios de seus passados.",
+      "avaliacao": 88,
+      "imagem": "assets/imagens/thunderbolts1.webp",
+      "protagonista": "Florence Pugh",
+      "protagonista_imagem": "assets/imagens/protagonistas/florence_pugh.webp",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "imgComplementar": "assets/imagens/thunderbolts2.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 2,
+          "imgComplementar": "assets/imagens/thunderbolts3.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 3,
+          "imgComplementar": "assets/imagens/thunderbolts4.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 4,
+          "imgComplementar": "assets/imagens/thunderbolts5.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 5,
+          "imgComplementar": "assets/imagens/thunderbolts6.webp",
+          "descricao": "Imagem do Filme"
+        },
+        {
+          "id": 6,
+          "imgComplementar": "assets/imagens/thunderbolts7.webp",
+          "descricao": "Imagem do Filme"
+        }
+      ]
+    }
+  ]
+}

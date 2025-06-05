@@ -1,0 +1,135 @@
+/*! ----------------------------------------------------------------- Header/ Barra Nav ----------------------------------------------------------------*/
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    color: white;
+}
+
+#corpo{
+    color: white;
+}
+
+#barraNavegacao {
+    list-style-type: none;
+    display: flex;
+
+}
+#barraNavegacao a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+
+    
+}
+
+.navBarra{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+
+#tituloPrincipal{
+    font-family: "Poppins", sans-serif;
+    margin-top: 7px;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 30px; 
+}
+
+
+/*! -------------------------------------------------------------------- BANNER ----------------------------------------------------------------*/
+
+.carousel-item {
+    position: relative;
+  }
+  
+  .carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+   
+  }
+  
+  .carousel-caption {
+    z-index: 2;
+    position: relative;
+  }
+
+  #banner img {
+    height: 28rem;
+    object-fit: cover; /* faz o "zoom" centralizado */
+    filter:brightness(0.8);
+}
+
+
+/*! -------------------------------------------------------------------- MAIN (CARDS) ----------------------------------------------------------------*/
+
+.card-title{
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-body{
+    
+    text-align: center;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+     /* Centraliza horizontalmente todos os itens */
+}
+
+#textoPadrao{
+    font-family: "Poppins", sans-serif;
+    margin-top: 200px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 20px; 
+}
+
+/*? -------------------------------------------------------------------- Media Querie BANNER ----------------------------------------------------------------*/
+
+@media screen and (max-width:767px){
+    #carouselExampleCaptions .carousel-item img{
+        height: 300px;
+    }
+}
+
+
+/*! -------------------------------------------------------------------- Profile  ----------------------------------------------------------------*/
+
+
+#perfilInfo{
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+#perfilInfo a{
+    text-decoration: none;
+}
+
+#ulProfile{
+    display: flex;
+}
+
+.texto{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+

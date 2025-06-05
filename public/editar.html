@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/editar.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5c015c8b62.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="init()">
+  <a href="index.html">
+    <h2 id="voltar" class="voltarClass"> Voltar</h2>
+
+  </a>
+
+  <div class="container" style="margin-top: 3rem;">
+    <h2>Alteração de Filmes</h2>
+    <form id="formFilmes" class="row g-3">
+      <div class="col-md-1">
+        <label for="inputEmail4" class="form-label">Id</label>
+        <input type="text" class="form-control" id="inputId" disabled>
+      </div>
+      <div class="col-md-3">
+        <label for="inputEmail4" class="form-label">Titulo (*)</label>
+        <input type="text" class="form-control" id="inputTitulo" placeholder="Título do Filme" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="inputCity" class="form-label">Protagonista 1 (*)</label>
+        <input type="text" class="form-control" id="inputProtagonista" placeholder="Protagonista" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Gênero (*)</label>
+        <input type="text" class="form-control" id="inputGenero" placeholder="Gêneros" required>
+      </div>
+      <div class="col-md-3">
+        <label for="inputAddress" class="form-label">Ano (*)</label>
+        <input type="number" class="form-control" id="inputAno" required placeholder="Ano de Lançamento">
+      </div>
+      <div class="col-md-3">
+        <label for="inputAddress2" class="form-label">Avaliação</label>
+        <input type="number" class="form-control" id="inputAvaliacao" placeholder="Rotten Tomatoes">
+      </div>
+
+      <div class="col-md-12">
+        <label for="inputZip" class="form-label">Sinopse (*)</label>
+        <input type="text" class="form-control" id="inputSinopse" required> </input>
+      </div>
+
+      <div class="col-12">
+        <button id="btnAdicionar" type="button" class="btn btn-success">Adicionar</button>
+        <button id="btnEditar" type="button" class="btn btn-warning">Editar</button>
+        <button id="btnExcluir" type="button" class="btn btn-danger">Excluir</button>
+        <button id="btnLimpar" type="button" class="btn btn-light">Limpar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="container" style="margin-top: 2rem;">
+    <div class="col-sm-12">
+      <h3>Tabela de Filmes Atual</h3>
+      <table id="tableFilmes" class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Gênero</th>
+            <th scope="col">Ano</th>
+            <th scope="col">Avaliação</th>
+            <th scope="col">Protagonista</th>
+            <th scope="col">Sinopse</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaFilmes">
+          <tr>
+            <th scope="row">1</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <script src="assets/scripts/editar.js"></script>
+  <script>
+    // Mostrar Filmes da Tabela
+    let filmeSelecionadoId = null
+    function mostrarFilmes() {
+      let tabelaFilmes = document.querySelector('#tabelaFilmes')
+
+      lerFilmes(dados => {
+        let linhas = ''
+        for (let i = 0; i < dados.length; i++) {
+          let filme = dados[i]
+          linhas += `
+        <tr>
+          <th scope="row">${filme.id}</th>
+          <td>${filme.titulo}</td>
+          <td>${filme.genero}</td>
+          <td>${filme.ano}</td>
+          <td>${filme.avaliacao}</td>
+          <td>${filme.protagonista}</td>
+          <td>${filme.sinopse}</td>
+        </tr>
+      `
+        }
+        tabelaFilmes.innerHTML = linhas
+      })
+    }
+
+    function formatarNomeParaImagem(nome) {
+      return nome
+        .toLowerCase()                   // minusculo
+        .normalize('NFD')                // remover acentuação
+        .replace(/[\u0300-\u036f]/g, '') // remover acentos
+        .replace(/\s+/g, '_')            // espaços para underline _
+        .replace(/[^\w_]/g, '')          // remover caracteres especiais
+    }
+
+    function formatarTitulo(titulo) {
+      return titulo
+        .toLowerCase()                   // minusculo
+        .normalize('NFD')                // remover acentuação
+        .replace(/[\u0300-\u036f]/g, '') // remover acentos
+        .replace(/\s+/g, '_')            // espaços para underline _
+        .replace(/[^\w_]/g, '')          // remover caracteres especiais
+    }
+
+    function gerarImagensDoFilme(titulo, qtdComplementares) {
+      const baseNome = formatarTitulo(titulo)
+      const imagemPrincipal = `assets/imagens/${baseNome}1.webp`
+      const imagensComplementares = []
+      for (let i = 2; i <= qtdComplementares + 1; i++) {
+        imagensComplementares.push({
+          id: i - 1,
+          imgComplementar: `assets/imagens/${baseNome}${i}.webp`,
+          descricao: "Imagem do Filme"
+        })
+      }
+      return { imagemPrincipal, imagensComplementares }
+    }
+
+    document.addEventListener('DOMContentLoaded', mostrarFilmes)
+
+    function init() {
+      // Adicionar Filme
+      let btnAdicionar = document.querySelector('#btnAdicionar')
+      btnAdicionar.addEventListener('click', event => {
+        event.preventDefault()
+        const form = document.querySelector('#formFilmes')
+
+        if (!form.checkValidity()) {
+          // faz o browser exibir os balõezinhos de erro nativos
+          form.reportValidity();
+          return;
+        }
+
+        const titulo = document.querySelector('#inputTitulo').value
+        const qtdComplementares = 6
+
+        const { imagemPrincipal, imagensComplementares } = gerarImagensDoFilme(titulo, qtdComplementares)
+
+        const nomeProtagonista = document.querySelector('#inputProtagonista').value;
+        const protagonista_imagem = `assets/imagens/protagonistas/${formatarNomeParaImagem(nomeProtagonista)}.webp`;
+
+        const filme = {
+          titulo: titulo,
+          protagonista: nomeProtagonista,
+          protagonista_imagem: protagonista_imagem,
+          genero: document.querySelector('#inputGenero').value,
+          ano: document.querySelector('#inputAno').value,
+          avaliacao: document.querySelector('#inputAvaliacao').value,
+          sinopse: document.querySelector('#inputSinopse').value,
+          imagem: imagemPrincipal,
+          imagens_complementares: imagensComplementares
+        }
+
+        cadastrarFilme(filme, mostrarFilmes)
+      })
+
+      // Preencher Formulário ao clicar em um filme
+      const tableFilmes = document.querySelector('#tableFilmes')
+      tableFilmes.addEventListener('click', function (e) {
+        if (e.target.tagName === "TD") {
+          let linha = e.target.parentNode
+          // Selecionar TODOS os filhos (colunas)
+          colunas = linha.querySelectorAll("th, td")
+
+          document.querySelector('#inputId').value = colunas[0].innerText
+          document.querySelector('#inputTitulo').value = colunas[1].innerText
+          document.querySelector('#inputGenero').value = colunas[2].innerText
+          document.querySelector('#inputAno').value = colunas[3].innerText
+          document.querySelector('#inputAvaliacao').value = colunas[4].innerText
+          document.querySelector('#inputProtagonista').value = colunas[5].innerText
+          document.querySelector('#inputSinopse').value = colunas[6].innerText
+
+          // Armazena ID do filme selecionado para exclui-lo
+          const idSelecionado = linha.querySelector("th")
+          filmeSelecionadoId = idSelecionado ? idSelecionado.innerText : null
+        }
+      })
+
+      // Editar Filme
+      let btnEditar = document.getElementById('btnEditar')
+      btnEditar.addEventListener('click', event => {
+        event.preventDefault()
+        const id = document.querySelector('#inputId').value
+
+
+        const titulo = document.querySelector('#inputTitulo').value
+        const qtdComplementares = 6
+
+        const nomeProtagonista = document.querySelector('#inputProtagonista').value;
+        const protagonista_imagem = `assets/imagens/protagonistas/${formatarNomeParaImagem(nomeProtagonista)}.webp`;
+
+        const { imagemPrincipal, imagensComplementares } = gerarImagensDoFilme(titulo, qtdComplementares)
+
+        if (!confirm("Tem certeza da alteração?")) {
+          return
+        }
+        const filmeEditado = {
+          id: id,
+          titulo: titulo,
+          protagonista: nomeProtagonista,
+          protagonista_imagem: protagonista_imagem,
+          genero: document.querySelector('#inputGenero').value,
+          ano: document.querySelector('#inputAno').value,
+          avaliacao: document.querySelector('#inputAvaliacao').value,
+          sinopse: document.querySelector('#inputSinopse').value,
+          imagem: imagemPrincipal,
+          imagens_complementares: imagensComplementares
+        }
+
+        editarFilme(filmeSelecionadoId, filmeEditado, mostrarFilmes)
+
+        filmeSelecionadoId = null
+
+        document.querySelector('#formFilmes').reset()
+      })
+
+
+      // Excluir filme
+      let btnExcluir = document.querySelector('#btnExcluir')
+      btnExcluir.addEventListener('click', event => {
+        event.preventDefault()
+
+        if (!confirm("Tem certeza da exclusão?")) {
+          return
+        }
+
+        excluirFilme(filmeSelecionadoId, mostrarFilmes)
+        filmeSelecionadoId
+        document.querySelector('#formFilmes').reset()
+      })
+
+      // Função limpar os inputs com um botão
+      let btnLimpar = document.querySelector('#btnLimpar')
+      btnLimpar.addEventListener('click', event => {
+        event.preventDefault();
+        document.querySelector('#formFilmes').reset()
+      })
+
+
+
+
+
+      // Função para conseguir tirar um filme do /filmesAdicionar, e colocá-lo no JSON principal (/filmes)
+      btnAdicionar.replaceWith(btnAdicionar.cloneNode(true))
+      btnAdicionar = document.querySelector('#btnAdicionar')
+      btnAdicionar.addEventListener('click', async event => {
+        event.preventDefault()
+        const form = document.querySelector('#formFilmes')
+
+        if (!form.checkValidity()) {
+          form.reportValidity()
+          return
+        }
+
+        const titulo = document.querySelector('#inputTitulo').value.trim()
+        const nomeProtagonista = document.querySelector('#inputProtagonista').value.trim()
+        const qtdComplementares = 6
+
+        // Buscar o catálogo /filmesAdicionar para tentar achar as imagens do filme digitado
+        let filmeCatalogo = null
+        try {
+          const resp = await fetch('/filmesAdicionar')
+          const catalogo = await resp.json()
+          // Busca título ignorando maiúsculas/minúsculas e espaços extras
+          filmeCatalogo = catalogo.find(f => f.titulo.toLowerCase().trim() === titulo.toLowerCase().trim())
+        } catch (err) {
+          console.error('Erro ao buscar catálogo filmesAdicionar:', err)
+        }
+
+        let imagemPrincipal = ''
+        let imagensComplementares = []
+        let protagonista_imagem = ''
+
+        if (filmeCatalogo) {
+          // Se achou no catálogo, usa as imagens de lá
+          imagemPrincipal = filmeCatalogo.imagem
+          imagensComplementares = filmeCatalogo.imagens_complementares
+          protagonista_imagem = filmeCatalogo.protagonista_imagem
+        } else {
+          // Se não achou, gera imagens baseadas no título e protagonista digitados
+          imagemPrincipal = `assets/imagens/${formatarTitulo(titulo)}1.webp`
+          imagensComplementares = []
+          for (let i = 2; i <= qtdComplementares + 1; i++) {
+            imagensComplementares.push({
+              id: i - 1,
+              imgComplementar: `assets/imagens/${formatarTitulo(titulo)}${i}.webp`,
+              descricao: "Imagem do Filme"
+            })
+          }
+          protagonista_imagem = `assets/imagens/protagonistas/${formatarNomeParaImagem(nomeProtagonista)}.webp`
+        }
+
+        const filme = {
+          id: Date.now().toString(),
+          titulo: titulo,
+          protagonista: nomeProtagonista,
+          protagonista_imagem: protagonista_imagem,
+          genero: document.querySelector('#inputGenero').value,
+          ano: document.querySelector('#inputAno').value,
+          avaliacao: document.querySelector('#inputAvaliacao').value,
+          sinopse: document.querySelector('#inputSinopse').value,
+          imagem: imagemPrincipal,
+          imagens_complementares: imagensComplementares
+        }
+
+        cadastrarFilme(filme, mostrarFilmes)
+        form.reset()
+      })
+
+    }
+
+  </script>
+</body>
+
+</html>
