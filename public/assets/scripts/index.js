@@ -10,6 +10,9 @@ fetch('http://localhost:3000/filmes')
             cardsHTML += `
         
             <div id="filmeBanner" class="col">
+                <button type="button" id="heartBtn" class="btn btn-outline-danger" style="position: absolute; right: 5px;">
+                    <i class="bi bi-heart-fill"></i>
+                </button>
                     <a href="detalhes.html?id=${filme.id}"><img style="border-radius: 8px;" src="${filme.imagem}" class="card-img-top" alt="..."></a>
                     <div class="card-body align-items-center">
                 </div>
