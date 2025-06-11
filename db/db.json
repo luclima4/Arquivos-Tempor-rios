@@ -93,38 +93,38 @@
       "ano": "2001",
       "sinopse": "Donnie Darko é um jovem atormentado por visões de um coelho misterioso, que o influencia a agir de forma estranha. Enquanto passa por terapia e vive os dilemas do colégio, ele se vê envolvido em uma trama complexa com elementos de loucura, viagem no tempo e destino.",
       "avaliacao": 88,
-      "imagem": "assets/imagens/donnie.webp",
+      "imagem": "assets/imagens/donnie_darko1.webp",
       "protagonista": "Jake Gyllenhaal",
       "protagonista_imagem": "assets/imagens/protagonistas/jake_gyllenhaal.webp",
       "imagens_complementares": [
         {
           "id": 1,
-          "imgComplementar": "assets/imagens/donnieHorizontal1.webp",
+          "imgComplementar": "assets/imagens/donnie_darko2.webp",
           "descricao": "Imagem do Filme"
         },
         {
           "id": 2,
-          "imgComplementar": "assets/imagens/donnieHorizontal2.webp",
+          "imgComplementar": "assets/imagens/donnie_darko3.webp",
           "descricao": "Imagem do Filme"
         },
         {
           "id": 3,
-          "imgComplementar": "assets/imagens/donnieHorizontal3.webp",
+          "imgComplementar": "assets/imagens/donnie_darko4.webp",
           "descricao": "Imagem do Filme"
         },
         {
           "id": 4,
-          "imgComplementar": "assets/imagens/donnieHorizontal4.webp",
+          "imgComplementar": "assets/imagens/donnie_darko5.webp",
           "descricao": "Imagem do Filme"
         },
         {
           "id": 5,
-          "imgComplementar": "assets/imagens/donnieHorizontal5.webp",
+          "imgComplementar": "assets/imagens/donnie_darko6.webp",
           "descricao": "Imagem do Filme"
         },
         {
           "id": 6,
-          "imgComplementar": "assets/imagens/donnieHorizontal6.webp",
+          "imgComplementar": "assets/imagens/donnie_darko7.webp",
           "descricao": "Imagem do Filme"
         }
       ]
@@ -732,6 +732,17 @@
           "descricao": "Imagem do Filme"
         }
       ]
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "filmesFavoritos": [
+        {
+          
+        }
+      ]
+
     }
   ]
 }

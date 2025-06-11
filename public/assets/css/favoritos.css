@@ -1,0 +1,47 @@
+/*! ----------------------------------------------------------------- Header/ Barra Nav ----------------------------------------------------------------*/
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    color: white;
+}
+
+#corpo{
+    color: white;
+}
+
+#barraNavegacao {
+    list-style-type: none;
+    display: flex;
+
+}
+#barraNavegacao a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+
+    
+}
+
+.navBarra{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+
+#tituloPrincipal{
+    font-family: "Poppins", sans-serif;
+    margin-top: 7px;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 30px; 
+}
+

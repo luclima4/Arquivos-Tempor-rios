@@ -29,6 +29,8 @@ cadastroForm.addEventListener('submit', event => {
     
 })
 
+//! ----------------- Tirar tudo isso. O cadastro deve ir para o JSON ----------------- !// 
+
 
 
 

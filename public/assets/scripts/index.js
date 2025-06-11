@@ -8,9 +8,7 @@ fetch('http://localhost:3000/filmes')
       cardsHTML += `
         <div id="filmeBanner" class="col">
           <div id="divImagem">
-            <button id="favBtn" class="btn btn-outline-danger">
-              Favoritar
-            </button>
+          <a onclick="adicionarFavorito('${filme.id}')"><img src="assets/imagens/icones/coracao_vazado.svg"></a>
             <a href="detalhes.html?id=${filme.id}">
               <img style="border-radius: 8px;" src="${filme.imagem}" class="card-img-top" alt="...">
             </a>
@@ -27,17 +25,14 @@ fetch('http://localhost:3000/filmes')
 
 /* Alterar botão não funciona */
 
-const btn = document.getElementById('favBtn')
-    btn.addEventListener('click', () => {
 
-      btn.classList.toggle('active');
 
-      if (btn.classList.contains('active')) {
-        btn.textContent = 'Favoritado';
-      } else {
-        btn.textContent = 'Favoritar';
-      }
-    });
+
+
+/* Adicionar Favorito */
+
+
+
 
 //*  ------------------------ Funções para login do usuário --------------------------------
 

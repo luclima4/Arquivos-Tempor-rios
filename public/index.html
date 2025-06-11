@@ -45,7 +45,7 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+            <input id="campoBusca" class="form-control me-2" type="search" placeholder="" aria-label="Search">
             <button style="background-color: rgb(0, 0, 0); color: white;" class="btn" type="submit">Pesquisar</button>
           </form>
         </div>
@@ -67,7 +67,7 @@
     </div>
 
     <div class="container">
-      <h2>Destaques da Semana</h2>
+      <h2 style="color: black;">Destaques da Semana</h2>
     </div>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -124,7 +124,7 @@
     <!-- CARDS FILMES PRINCIPAIS -->
 
     <div class="container my-5">
-      <h2>Recomendados</h2>
+      <h2 style="color: black;">Recomendados</h2>
       <div id="injetaCard" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4">
       </div>
     </div>
@@ -165,12 +165,12 @@
         if (usuario.tipo === 'administrador') {
           document.getElementById('perfilInfo').innerHTML = `
                 <a href="editar.html"><p style="font-size: 20px; color: black;">Cadastro de Filmes</p></a>
-                <a href="perfil.html"><p style="font-size: 20px; color: black;">Perfil</p></a>
+                <a href="favoritos.html"><p style="font-size: 20px; color: black;">Perfil</p></a>
                 <a id="sairLink" href="#"><p style="font-size: 20px; color: black;">Sair</p></a>
             `;
         } else {
           document.getElementById('perfilInfo').innerHTML = `
-                <a href="perfil.html"><p style="font-size: 20px; color: black;">Favoritos</p></a>
+                <a href="favoritos.html"><p style="font-size: 20px; color: black;">Favoritos</p></a>
                 <a id="sairLink" href="#"><p style="font-size: 20px; color: black;">Sair</p></a>
             `;
         }
@@ -188,6 +188,17 @@
       event.preventDefault();
       localStorage.removeItem('usuarioLogado');
       window.location.href = "login.html";
+    }
+
+    // ---------------------------------- Barra de pesquisa ----------------------------------
+    let campoBusca = document.querySelector('#campoBusca')
+    campoBusca.addEventListener('input', filtrarNoticias)
+
+    function filtrarNoticias (event){
+      fetch('http://localhost:3000/filmes')
+      .then(res => res.JSON)
+
+      
     }
 
   </script>
