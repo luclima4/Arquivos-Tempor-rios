@@ -1,0 +1,2 @@
+SHOW CREATE TABLE tb_consulta;
+SHOW CREATE TABLE tb_pet;
